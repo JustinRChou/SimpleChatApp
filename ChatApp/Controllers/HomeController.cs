@@ -28,5 +28,11 @@ namespace ChatApp.Controllers
 
             return View();
         }
+        public ActionResult ChatGroup()
+        {
+            ViewBag.Message = "Chats";
+
+            return View();
+        }
     }
 }
