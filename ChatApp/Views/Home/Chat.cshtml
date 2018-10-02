@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Chat";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<div class="row">
+    <div>
+        Name: <input type="text" name="name" /><br />
+        Message: <input type="text" name="message" /><br />
+        <input type="button" value="Send" onclick="newMessage();" />
+        <input type="button" value="Get Message" onclick="getAllMessage();" />
+    </div>
+    <div>
+        <ul name="chatbox">
+
+        </ul>
+    </div>
+</div>
+<script src="~/Scripts/jquery-3.3.1.min.js"></script>
+<script src="~/Scripts/jquery.signalR-2.3.0.min.js"></script>
+<script src="~/signalr/js"></script>
+<script src="~/Scripts/Chat/Chat.js"></script>
